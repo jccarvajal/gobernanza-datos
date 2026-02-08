@@ -1,8 +1,8 @@
 # Bibliografía Fundamental
-**(El Arsenal del Arquitecto de Datos)**
+**(El Arsenal de la Ingeniería de la Evidencia)**
 
 ### Introducción: Las Fuentes de la Defensa
-Este anexo no busca la erudición académica, sino la supervivencia operativa. Hemos seleccionado los textos que fundamentan la tesis del **Dato como Material Peligroso** y la **Ingeniería de la Verdad**. Estas obras proveen la base matemática, legal y arquitectónica para defender a la organización ante la Ley 21.719 y la alucinación algorítmica.
+Este anexo no busca la erudición académica, sino la supervivencia operativa. Hemos seleccionado los textos que fundamentan la tesis del **Dato como Uranio** y la **Arquitectura Defendible**. Estas obras proveen la base matemática, legal y arquitectónica para resistir la fiscalización de la Ley 21.719 y gestionar el riesgo cognitivo de la IA.
 
 ### Prólogo: La Física del Dato y la Verdad
 
@@ -11,7 +11,7 @@ Este anexo no busca la erudición académica, sino la supervivencia operativa. H
 * **Zuboff, S. (2019).** "The Age of Surveillance Capitalism". PublicAffairs. [[Ver Libro]](https://www.amazon.com/Age-Surveillance-Capitalism-Future-Frontier/dp/1610395697)
     * **Por qué leerlo:** El marco teórico para entender el "Dato como Uranio". Explica la economía extractiva que generó la crisis de privacidad actual y justifica la necesidad de defensas como el "Airlock" y la Soberanía.
 * **Véliz, C. (2020).** "Privacy is Power". Melville House. [[Ver Libro]](https://www.amazon.com/Privacy-Power-Why-Should-Take/dp/1612198583)
-    * **Por qué leerlo:** Lectura obligatoria para el Bloque 1. Desmonta el mito de que "si no haces nada malo, no tienes nada que temer" y establece el riesgo tóxico de acumular datos personales.
+    * **Por qué leerlo:** Lectura obligatoria para el Prólogo y el Bloque 1. Desmonta el mito de que "si no haces nada malo, no tienes nada que temer" y establece el riesgo tóxico de acumular datos personales.
 
 ### Bloque 1: Estrategia y Poder (El Dato-Uranio)
 
@@ -27,23 +27,30 @@ Este anexo no busca la erudición académica, sino la supervivencia operativa. H
 * **Beyer, B., et al. (2016).** "Site Reliability Engineering (SRE)". O'Reilly Media. [[Ver Libro]](https://www.amazon.com/Site-Reliability-Engineering-Production-Systems/dp/149192912X)
     * **Por qué leerlo:** La doctrina de Google sobre cómo operar sistemas críticos. Base para aplicar conceptos de "Presupuesto de Error" a la calidad del dato y la disponibilidad de la plataforma de verdad.
 
-### Bloque 3: Datos para la Inteligencia (IA y Vectores)
+### Bloque 3: Automatización e Inteligencia (IA y RAG)
 
 * **Russell, S. (2019).** "Human Compatible: Artificial Intelligence and the Problem of Control". Viking. [[Ver Libro]](https://www.amazon.com/Human-Compatible-Artificial-Intelligence-Problem/dp/0525558616)
-    * **Por qué leerlo:** Fundamento filosófico del Bloque 3. Plantea el "problema de alineación" (evitar que la IA haga lo que le pedimos pero no lo que queremos), base para la arquitectura RAG y la sanitización cognitiva.
+    * **Por qué leerlo:** Fundamento para el Capítulo 07 (La Ilusión de No Tener IA) y Capítulo 10 (Sanitización). Plantea el "problema de alineación", clave para entender por qué la IA no debe operar sin supervisión estructural.
 * **Huyen, C. (2022).** "Designing Machine Learning Systems". O'Reilly Media. [[Ver Libro]](https://www.amazon.com/Designing-Machine-Learning-Systems-Production-Ready/dp/1098107969)
-    * **Por qué leerlo:** Guía técnica para el Capítulo 08. Explica cómo desplegar modelos que no degraden en producción y cómo gestionar la deriva de datos (*Data Drift*) y la deriva de conceptos.
+    * **Por qué leerlo:** Guía técnica para los Capítulos 08 y 09. Explica cómo desplegar modelos que no degraden en producción, gestión de *Data Drift* y la necesidad de infraestructura de evaluación continua (RAG).
 
-### Bloque 4: Arquitectura Legal (Defensa y PbD)
+### Bloque 4: Arquitectura Legal (Privacy by Design)
 
 * **Cavoukian, A. (2009).** "Privacy by Design: The 7 Foundational Principles". [[Paper Oficial]](https://www.ipc.on.ca/wp-content/uploads/2018/01/pbd-primer.pdf)
-    * **Por qué leerlo:** El código fuente de la Ley 21.719 y del Capítulo 10. No es un libro, es el manifiesto que debe ser traducido a reglas de ingeniería en el pipeline de CI/CD.
+    * **Por qué leerlo:** El código fuente de la Ley 21.719 y del Capítulo 11. No es un libro, es el manifiesto que debe ser traducido a reglas de ingeniería en el pipeline de CI/CD.
 * **O'Neil, C. (2016).** "Weapons of Math Destruction". Crown. [[Ver Libro]](https://www.amazon.com/Weapons-Math-Destruction-Increases-Inequality/dp/0553418815)
-    * **Por qué leerlo:** Vital para el Capítulo 11 (Infraestructura de Derechos) y la defensa ante sesgos. Explica cómo los algoritmos opacos amplifican la desigualdad y generan responsabilidad civil.
+    * **Por qué leerlo:** Vital para el Capítulo 12 (Infraestructura de Derechos) y la defensa ante sesgos. Explica cómo los algoritmos opacos generan responsabilidad civil y administrativa.
 
-### Bloque 5: Escalabilidad y Gobierno (Data Mesh)
+### Bloque 5: Escalabilidad y Marco de Ejecución
 
 * **Dehghani, Z. (2022).** "Data Mesh: Delivering Data-Driven Value at Scale". O'Reilly Media. [[Ver Libro]](https://www.amazon.com/Data-Mesh-Delivering-Driven-Value/dp/1492092398)
-    * **Por qué leerlo:** La Biblia del Capítulo 12. Propone el cambio de paradigma desde el "Lago de Datos" centralizado (y pantanoso) hacia la federación de dominios con gobierno computacional federado.
+    * **Por qué leerlo:** La Biblia del Capítulo 13. Propone el cambio de paradigma desde el "Lago de Datos" centralizado hacia la federación de dominios con gobierno computacional federado.
 * **Laney, D. (2017).** "Infonomics: How to Monetize, Manage, and Measure Information". Bibliomotion. [[Ver Libro]](https://www.amazon.com/Infonomics-Monetize-Manage-Measure-Information/dp/1138090387)
-    * **Por qué leerlo:** Lectura crítica para el Capítulo 13 (Rol del CDO). Enseña a valorar la información como un activo contable, pero también a calcular su "Riesgo de Información" (Liability).
+    * **Por qué leerlo:** Lectura crítica para el Capítulo 14 (DAMA/MGDE). Enseña a tratar la información como un activo contable, permitiendo calcular su "Riesgo de Información" (Liability) de forma monetaria.
+
+### Bloque 6: Defensa y Liderazgo (El Examen Final)
+
+* **Leveson, N. (2011).** "Engineering a Safer World: Systems Thinking Applied to Safety". MIT Press. [[Ver Libro]](https://mitpress.mit.edu/9780262533690/engineering-a-safer-world/)
+    * **Por qué leerlo:** La referencia absoluta para el Capítulo 15 (Fiscalización Técnica). Establece que la seguridad no es una propiedad de los componentes, sino una propiedad emergente del sistema de control.
+* **Horowitz, B. (2014).** "The Hard Thing About Hard Things". Harper Business. [[Ver Libro]](https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205)
+    * **Por qué leerlo:** Esencial para el Capítulo 16 (Rol del CDO). Define la mentalidad de "Tiempo de Guerra" (*Wartime CEO*) necesaria para liderar bajo crisis regulatoria y amenaza existencial.
