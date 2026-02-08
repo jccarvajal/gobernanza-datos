@@ -88,7 +88,7 @@ nav:
       - 'Capítulo 11: Privacy by Design: La Ley como Código': capitulos/11-Privacy-by-Design.md
       - 'Capítulo 12: Infraestructura de Derechos': capitulos/12-Infraestructura-de-Derechos.md
   - 'Bloque 5: Escalabilidad y Marco de Ejecución':
-      - 'Capítulo 13: Data Mesh y Federación': capitulos/13-Data-Mech-y-Federacion.md
+      - 'Capítulo 13: Data Mesh y Federación': capitulos/13-Data-Mesh-y-Federacion.md
       - 'Capítulo 14: DAMA, MGDE y Gobernanza Ejecutable': capitulos/14-DAMA-MGDE-Gobernanza.md
   - 'Bloque 6: Defensa y Liderazgo (El Examen Final)':
       - 'Capítulo 15: Arquitectura bajo Fiscalización Técnica': capitulos/15-Arquitectura-Fiscalizacion.md
