@@ -1,0 +1,114 @@
+site_name: Gobernanza de Datos Defensiva
+site_url: https://gobernanza.jccarvajal.com
+site_author: Juan Carlos Carvajal
+site_description: Ingeniería de Datos, IA y Defensa Legal en la Era de la Responsabilidad Proactiva
+copyright: Copyright &copy; 2026 Juan Carlos Carvajal - Licencia CC BY-NC-ND 4.0
+
+# Configuración del Tema (Material for MkDocs - Modo Institucional/Sobrio)
+theme:
+  name: material
+  language: es
+  logo: assets/images/portada-datos.png
+  favicon: assets/images/favicon.ico
+  palette: 
+    - scheme: default
+      primary: slate # Color de autoridad y estructura
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.integrate
+
+# Extensiones (ACTIVACIÓN DE MERMAID & LATEX)
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - def_list
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex: # Para fórmulas matemáticas (Matemática del Riesgo)
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+
+# Sección de Plugins  
+plugins:
+  - search
+
+# Mapa del Sitio (Estructura del Libro III)
+nav:
+  - Inicio: index.md
+  - Introducción:
+    - Nota al Lector: nota-al-lector.md
+    - Prólogo Ejecutivo: prologo.md
+    - Ideas Centrales: ideas-centrales.md
+  - 'Bloque 1: Estrategia y Poder':
+      - 'Capítulo 01: El Dato como Uranio': capitulos/01-Dato-como-Uranio.md
+      - 'Capítulo 02: GRC: El Sistema Operativo': capitulos/02-GRC-Sistema-Operativo.md
+      - 'Capítulo 03: Arquitectura Decisional': capitulos/03-Arquitectura-Decisional.md
+  - 'Bloque 2: Ingeniería de la Verdad':
+      - 'Capítulo 04: Soberanía de Infraestructura': capitulos/04-Soberania-Infraestructura.md
+      - 'Capítulo 05: Ingeniería del Dato: De ETL a ETL-V': capitulos/05-Ingenieria-Dato-ETL-V.md
+      - 'Capítulo 06: La Fuente Única de la Verdad (SSOT)': capitulos/06-Fuente-Unica-de-Verdad.md
+  - 'Bloque 3: Automatización e Inteligencia':
+      - 'Capítulo 07: La Ilusión de No Tener IA': capitulos/07-Decision-Algoritmica.md
+      - 'Capítulo 08: El Océano No-Estructurado': capitulos/08-Oceano-No-Estructurado.md
+      - 'Capítulo 09: Memoria Vectorial y RAG': capitulos/09-Memoria-Vectorial-RAG.md
+      - 'Capítulo 10: Sanitización Cognitiva': capitulos/10-Sanitizacion-Cognitiva.md
+  - 'Bloque 4: Arquitectura Legal':
+      - 'Capítulo 11: Privacy by Design: La Ley como Código': capitulos/11-Privacy-by-Design.md
+      - 'Capítulo 12: Infraestructura de Derechos': capitulos/12-Infraestructura-de-Derechos.md
+  - 'Bloque 5: Escalabilidad y Marco de Ejecución':
+      - 'Capítulo 13: Data Mesh y Federación': capitulos/13-Data-Mesh-y-Federacion.md
+      - 'Capítulo 14: DAMA, MGDE y Gobernanza Ejecutable': capitulos/14-DAMA-MGDE-Gobernanza.md
+  - 'Bloque 6: Defensa y Liderazgo (El Examen Final)':
+      - 'Capítulo 15: Arquitectura bajo Fiscalización Técnica': capitulos/15-Arquitectura-Fiscalizacion.md
+      - 'Capítulo 16: El Rol del CDO': capitulos/16-Rol-del-CDO.md
+  - Conclusión:
+      - 'Epílogo: El Costo de la Vigilancia': epilogo.md
+  - Anexos Operativos:
+      - 'Anexo A: Constitución de los Datos (Data Charter)': anexos/A-Constitucion-Datos.md
+      - 'Anexo B: Diccionario de Negocio y Taxonomía': anexos/B-Diccionario-Negocio.md
+      - 'Anexo C: Mapeo de Estándares (La Piedra Rosetta)': anexos/C-Mapeo-Estandares.md
+      - 'Anexo D: Protocolos de Crisis y Evidencia Legal': anexos/D-Protocolos-Crisis-Evidencia.md
+      - 'Anexo E: Checklist de Supervivencia del CDO': anexos/E-Checklist-Supervivencia-CDO.md
+      - 'Anexo F: Protocolo de Adecuación Chile 2026 (Ley 21.719)': anexos/F-Protocolo-Ley-21719-Chile.md
+  - Referencias:
+    - Glosario: referencias/Glosario.md
+    - Bibliografía: referencias/Bibliografia.md
+  - Acerca de:
+    - Historial (Changelog): changelog.md
+  - Acerca de:
+    - Autor: acerca/autor.md
+    - Licencia: acerca/licence.md
+    - Cómo Contribuir: acerca/contribuir.md
+    - Historial (Changelog): changelog.md
