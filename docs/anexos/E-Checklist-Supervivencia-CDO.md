@@ -1,4 +1,4 @@
-# Anexo E: Checklist de Supervivencia del CDO (Los Primeros 90 Días)
+# Anexo E: Checklist de Supervivencia del CDO (Primeros 90 Días)
 
 > **CLASIFICACIÓN:** CONFIDENCIAL / USO EXCLUSIVO CDO
 
@@ -88,6 +88,7 @@ La recepción formal de este documento (mediante acta o minuta) implica la oblig
     * [ ] **DEFENDIBLE:** > 80% (Debida diligencia demostrable).
 
 **Criterio de Acción Esperado:**
+
 * **CRÍTICO:** Requiere plan de contención inmediato y sesión extraordinaria de riesgos.
 * **VULNERABLE:** Requiere priorización formal y seguimiento trimestral.
 * **DEFENDIBLE:** Requiere monitoreo continuo.
@@ -99,5 +100,6 @@ La recepción formal de este documento (mediante acta o minuta) implica la oblig
 
 __________________________
 **Firma del CDO**
+
 *Nota: La firma del CDO acredita la emisión del diagnóstico y su comunicación formal, no la conformidad con el estado resultante, ni la validación de suficiencia, ni la aceptación de la exposición al riesgo residual.*
 *Fecha del Diagnóstico:*

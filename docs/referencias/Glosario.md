@@ -34,6 +34,7 @@ Quien no use estos términos con estas definiciones, está operando bajo deuda t
 * **Referencia Principal:** Prólogo / Ideas Centrales.
 
 **BYOK (Bring Your Own Key)**
+
 * **Definición:** Protocolo de soberanía donde la organización retiene las llaves criptográficas maestras, impidiendo que el proveedor de nube (AWS, Azure, Google) pueda leer los datos almacenados, incluso bajo orden judicial extranjera.
 * **Referencia Principal:** Capítulo 04.
 
@@ -53,6 +54,7 @@ Quien no use estos términos con estas definiciones, está operando bajo deuda t
 * **Referencia Principal:** Capítulo 07 / Anexo B.
 
 **Checklist como Acto de Gobierno**
+
 * **Definición:** Uso de instrumentos técnicos (como el Anexo E) no como herramientas operativas, sino como actos formales de advertencia, escalamiento y transferencia consciente de riesgo hacia la Alta Dirección.
 * **Referencia Principal:** Anexo E.
 

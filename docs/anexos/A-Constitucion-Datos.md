@@ -68,6 +68,7 @@ Todo dato debe estar clasificado. El tratamiento de datos "Sin Clasificar" está
 
 **3.1. Principio de Contaminación (Herencia)**
 La clasificación se hereda automáticamente a los datos derivados según el componente más restrictivo.
+
 * **Alcance IA:** Los artefactos derivados del tratamiento de datos (incluyendo **modelos, features, embeddings, scores o representaciones vectoriales**) se consideran datos derivados a efectos de propiedad, clasificación, responsabilidad y control.
 * *Limitación:* La clasificación heredada no implica, por sí sola, que el artefacto revele datos personales o sensibles, debiendo evaluarse caso a caso según su reversibilidad técnica.
 * *Ejemplo:* Si un reporte mezcla datos `PÚBLICO` con datos `RESTRINGIDO`, el reporte completo se clasifica como `RESTRINGIDO`.
@@ -110,7 +111,9 @@ Esta Constitución de Datos entra en vigor a partir de su firma y deroga cualqui
 
 __________________________
 **Gerente General (CEO)**
+
 *(Por Resolución de Directorio)*
+
 *Responsable Final del Riesgo a nivel de Gobierno Corporativo*
 
 <br>
@@ -118,5 +121,7 @@ __________________________
 
 __________________________
 **Chief Data Officer (CDO)**
+
 *(Autoridad Delegada)*
+
 *Responsable de la Gobernanza*

@@ -84,6 +84,7 @@ La aprobación, financiamiento y priorización de este protocolo constituye un a
 > En una fiscalización de la Agencia, la ausencia de evidencia técnica (linaje, logs inmutables, borrado seguro) no se interpreta como una carencia tecnológica, sino como una **falta de control directivo sobre activos críticos**.
 >
 > **En el sector público, esta omisión activa consecuencias directas:**
+> 
 > * **Responsabilidad Administrativa:** Sumarios por falta al deber de dirección y control jerárquico.
 > * **Afectación Patrimonial:** Riesgo de descuentos en remuneraciones y pérdida de asignaciones de modernización/gestión.
 > * **Evaluación ADP:** Riesgo de no renovación o remoción por pérdida de confianza (falta de probidad administrativa).

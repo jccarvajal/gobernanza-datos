@@ -41,7 +41,7 @@ La automatización no llega cuando se le envía una invitación formal. Llega cu
 
 ## 7.3. El Punto de No Retorno
 
-Existe un momento crítico —rara vez reconocido en los diagramas de arquitectura— en que los datos de una organización cruzan un umbral invisible.
+Existe un momento crítico, rara vez reconocido en los diagramas de arquitectura, en que los datos de una organización cruzan un umbral invisible.
 
 No es cuando se entrena un modelo complejo.
 Es cuando los datos comienzan a ser consumidos por sistemas que **no toleran ambigüedad**.
@@ -61,7 +61,7 @@ La gobernanza que no está diseñada para automatización no falla el día que s
 ## 7.4. La IA como Prueba de Estrés, no como Objetivo
 
 Este libro no asume que la organización tenga una estrategia de "IA Generativa".
-Asume algo más incómodo: que sus datos ya están siendo usados —o lo serán pronto— por sistemas que no interpretan contexto, intención ni excusas.
+Asume algo más incómodo: que sus datos ya están siendo usados, o lo serán pronto, por sistemas que no interpretan contexto, intención ni excusas.
 
 La IA aparece aquí no como una promesa de innovación, sino como la **Prueba de Estrés Definitiva** de la gobernanza existente.
 
