@@ -4,7 +4,7 @@
 
 ## 14.1. Por qué DAMA y MGDE siguen siendo necesarios (pero insuficientes)
 
-Los marcos tradicionales de gobernanza de datos —en particular **DAMA-DMBOK2** a nivel global y el **Modelo de Gestión de Documentos Electrónicos (MGDE)** en el sector público chileno— han cumplido un rol histórico fundamental: proporcionar un lenguaje común, una taxonomía compartida y una estructura conceptual para ordenar el caos informacional.
+Los marcos tradicionales de gobernanza de datos, en particular **DAMA-DMBOK2** a nivel global y el **Modelo de Gestión de Documentos Electrónicos (MGDE)** en el sector público chileno, han cumplido un rol histórico fundamental: proporcionar un lenguaje común, una taxonomía compartida y una estructura conceptual para ordenar el caos informacional.
 
 Sin DAMA y MGDE, la gobernanza se fragmenta en iniciativas aisladas, dependientes de "héroes" y sin coherencia institucional. Son la base semántica indispensable.
 

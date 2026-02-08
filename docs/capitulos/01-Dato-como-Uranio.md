@@ -41,6 +41,7 @@ $$Si \quad R_t > U_t \quad \rightarrow \quad \text{Estado: Basura Tóxica}$$
 
 Esta clasificación no es una metáfora emocional, es un estado técnico.
 Cuando un dato alcanza este estado, no implica necesariamente un borrado automático y ciego (lo cual sería imprudente), sino que **desencadena obligatoriamente un protocolo de disposición**:
+
 1.  **Justificación:** ¿Existe una obligación legal o probatoria para mantenerlo?
 2.  **Acción:** Si no existe, se procede a la destrucción certificada. Si existe, se procede al archivado en "bóveda fría" (aislado de los sistemas productivos).
 

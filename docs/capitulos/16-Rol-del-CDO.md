@@ -16,7 +16,7 @@ Si el CDO reporta al CIO, la Gobernanza siempre perderá frente a la "urgencia o
 
 ## 16.2. El Verdugo de Reportes (La Autoridad Sanitaria)
 
-La función más impopular —y necesaria— del CDO es actuar como la **"Autoridad Sanitaria"** de la información.
+La función más impopular, y necesaria, del CDO es actuar como la **"Autoridad Sanitaria"** de la información.
 Al igual que un inspector aeronáutico tiene la potestad de retirar el certificado de vuelo de un avión inseguro, el CDO debe tener la autoridad para **retirar del servicio** (decomisionar) reportes, tableros o modelos de IA que no cumplan con los estándares de gobernanza definidos en el Capítulo 15.
 
 Esto no es un juicio personal sobre la estética del reporte; es una **Revocación de Validez Técnica**.
