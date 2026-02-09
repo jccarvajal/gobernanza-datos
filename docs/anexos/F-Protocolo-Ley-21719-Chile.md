@@ -114,21 +114,25 @@ La aprobación, financiamiento y priorización de este protocolo constituye un a
 
 ### FASE 1: DIAGNÓSTICO Y CUARENTENA (Q1: Enero - Marzo)
 *Estado: **CRÍTICO / EN CURSO**.*
+
 * **Discovery:** Escaneo de bases de datos buscando PII no gobernada.
 * **Congelamiento:** Se prohíbe la creación de nuevas tablas productivas sin esquema validado (Ver **Cap. 9 - Airlock**).
 
 ### FASE 2: INGENIERÍA DE DEFENSA (Q2: Abril - Junio)
 *Objetivo: Construir los muros.*
+
 * **Gate EIPD:** Bloqueo automatizado en CI/CD para modelos de IA y tratamientos masivos.
 * **Motor de Rectificación:** Scripts de propagación de cambios en el Data Lake.
 
 ### FASE 3: PURGA Y TRANSPARENCIA (Q3: Julio - Septiembre)
 *Objetivo: Eliminar pasivos.*
+
 * **La Gran Purga:** Ejecución de *Crypto-shredding* sobre datos tóxicos o caducos identificados en Fase 1.
 * **Ultimátum SaaS:** Bloqueo o migración de proveedores que no certifiquen cumplimiento técnico.
 
 ### FASE 4: SIMULACRO Y GO-LIVE (Q4: Octubre - Diciembre)
 *Objetivo: Estrés y Operación.*
+
 * **Simulacro de Brecha:** Prueba de notificación en <72h usando Linaje de Datos y Logs WORM.
 * **Code Freeze:** Auditoría final de "caja negra" simulando a la Agencia.
 * **01/12/2026:** **INICIO DE VIGENCIA.** Riesgo legal activo al 100%.
