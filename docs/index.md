@@ -1,6 +1,6 @@
 # Gobernanza de Datos Defensiva
 ## Ingeniería de Datos, IA y Defensa Legal en la Era de la Responsabilidad Proactiva
-**Versión 1.0 (Febrero 2026)**
+**Versión 1.1 (Febrero 2026)**
 
 **Autor:** [Juan Carlos Carvajal](https://www.jccarvajal.com/)
 
@@ -139,6 +139,8 @@ Estos anexos son herramientas de implementación inmediata, blindadas legal y t�
   *Diagnóstico binario y Acta de Deslinde de Responsabilidades (Primeros 90 días).*
 * [Anexo F: Protocolo de Adecuación Chile 2026 (Ley 21.719)](./anexos/F-Protocolo-Ley-21719-Chile.md)
   *Plan de batalla obligatorio y gestión de riesgo personal ante la fiscalización técnica.*
+* [Anexo G: Estándar de Gobernanza Proporcional](./anexos/G-Estandar-Gobernanza-Proporcional.md)
+  *Impacto sistémico, ingeniería de contención y responsabilidad ejecutiva no delegable.*
 
 ---
 
@@ -149,7 +151,7 @@ Estos anexos son herramientas de implementación inmediata, blindadas legal y t�
 ---
 
 ## Changelog
-* **v1.0 (Febrero 2026):** Publicación del marco completo "Gobernanza de Datos Defensiva", consolidando **16 capítulos** y los Anexos A-F blindados legalmente.
+* **v1.1 (Febrero 2026):** Escalada a Ingeniería de Contención. Incorporación del Estándar de Gobernanza Proporcional (Anexo G) y endurecimiento del Protocolo de Adecuación Ley 21.719 (Anexo F).
 * Ver [Historial Completo](./changelog.md).
 
 ## Sugerencias y Mejoras

@@ -4,6 +4,24 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 
 ---
 
+## [1.1.0] - 2026-02-13
+
+### Actualización: Arquitectura de Contención y Proporcionalidad
+
+Esta versión introduce mecanismos de **ingeniería de contención** (Anexo G) y endurece la postura defensiva ante la entrada en vigencia del régimen sancionatorio en Chile (Anexo F). Se pasa de la "teoría del cumplimiento" a la "arquitectura de bloqueo".
+
+#### Agregado (New Features)
+* **Anexo G (Estándar de Gobernanza Proporcional):** Se incorpora el **EGP** como norma de arquitectura institucional.
+    * **Distinción Ontológica:** Separación formal entre "Producto Digital" (MVP) e "Infraestructura Funcional" (Sistémica).
+    * **Ingeniería de Contención:** Obligatoriedad de *Kill Capability* (Botón de Pánico) y *Trazabilidad de la Omisión* para sistemas Nivel 3.
+    * **Mecanismo Anti-Gaming:** Facultad de la 2ª Línea para reclasificar unilateralmente sistemas sub-valuados por el negocio, con reporte obligatorio al Directorio.
+
+#### Modificado (Hardening)
+* **Anexo F (Protocolo Ley 21.719 - Chile 2026):** Se reestructura el protocolo de adecuación, transformándolo de una guía de cumplimiento a un **Plan de Batalla Operativo**.
+    * **Gate de Despliegue (EIPD):** La Evaluación de Impacto deja de ser documental y se convierte en una condición de bloqueo automatizado en el pipeline CI/CD (`deployment gate`).
+    * **Cláusula de Responsabilidad Directiva:** Se explicita la "Falta al Deber de Control Jerárquico" para transferir el riesgo administrativo y patrimonial a las jefaturas que obstaculicen la implementación técnica.
+    * **Cronograma de Purga (Q1-Q4):** Definición estricta de hitos de *Crypto-shredding* y *Airlock* de datos para llegar "limpios" al 01 de diciembre de 2026.
+
 ## [1.0.0] - 2026-02-08
 
 ### Lanzamiento Inicial: La Doctrina de Defensa

@@ -1,143 +1,189 @@
-# Anexo F: Protocolo de Adecuación Chile 2026 (Ley 21.719)
+# Anexo F: Protocolo de Adecuación Técnica (Ley 21.719)
 
 > **CLASIFICACIÓN:** CRÍTICO / NORMATIVO LOCAL
-
-> **NORMATIVA:** LEY 21.719 (PROTECCIÓN DE DATOS PERSONALES)
-
-> **OBJETIVO:** ADECUACIÓN TÉCNICA FORZOSA ANTE LA ENTRADA EN VIGENCIA
-
-> **DEADLINE:** 01 DE DICIEMBRE DE 2026
-
-> **INSTRUMENTO DE CONTROL:** AUDITABLE MEDIANTE EL CHECKLIST DEL ANEXO E.
-
----
-
-## 1. EL CAMBIO DE RÉGIMEN (FISCALIZACIÓN TÉCNICA)
-
-A partir del **01/12/2026**, la Agencia de Protección de Datos fiscalizará la **arquitectura misma** de tratamiento.
-
-**Hipótesis Operativa:**
-Desde una perspectiva de **gestión de riesgo bajo el escenario fiscalizador más estricto**, la organización asume operativamente que la "buena fe" no constituye una defensa suficiente por sí sola. La **principal prueba de diligencia demostrable** desde la perspectiva de esta política interna será la evidencia técnica inmutable de cumplimiento (Responsabilidad Proactiva Demostrable), sin perjuicio de otros medios de prueba admisibles conforme a la legislación vigente.
-
-> **Nota de Alcance:** Este criterio no pretende fijar el estándar jurídico definitivo de cumplimiento, el cual corresponde exclusivamente a la autoridad competente y a los tribunales, sino establecer un **umbral interno de diligencia reforzada** para efectos de gestión de riesgo.
+>
+> **MARCO JURÍDICO:** LEY 21.719 SOBRE PROTECCIÓN DE DATOS PERSONALES
+>
+> **OBJETIVO:** ESTÁNDAR DE CUMPLIMIENTO TÉCNICO Y TRAZABILIDAD
+>
+> **PLAZO PERENTORIO:** 01 DE DICIEMBRE DE 2026
+>
+> **VINCULACIÓN:** ESTE DOCUMENTO ES AUDITABLE MEDIANTE EL CHECKLIST DEL ANEXO E.
 
 ---
 
-## 2. OBLIGACIONES TÉCNICAS (ESTADOS DEL SISTEMA)
+## PARTE I — MARCO NORMATIVO Y ESTÁNDAR ARQUITECTÓNICO
 
-A las salvaguardas generales del libro (Cap. 1-16), se integran estos bloques críticos exigidos específicamente por la Ley 21.719.
+### 1. CONTEXTO Y CAMBIO DE RÉGIMEN DE FISCALIZACIÓN
 
-### 2.1. Evaluación de Impacto (EIPD) como Pipeline
-La EIPD no es un informe estático en PDF; es un **Gate de Despliegue** bloqueante en el flujo de CI/CD.
+Con la entrada en vigencia plena de la Ley 21.719 el **01 de diciembre de 2026**, la Agencia de Protección de Datos iniciará sus facultades fiscalizadoras. A diferencia de normativas anteriores, la Agencia no solo auditará la existencia de políticas escritas, sino que fiscalizará la **arquitectura efectiva** de los sistemas de tratamiento de información.
 
-* **Control:** El pipeline de despliegue valida la existencia de un `EIPD_ID` aprobado en el sistema de gestión.
-* **Criterio de Riesgo:** Se consideran de alto riesgo (y requieren EIPD obligatoria) los Datos Sensibles (salud, biometría), tratamientos masivos y uso de IA/Perfilamiento.
-* **Regla de Bloqueo:** `IF (risk_level == HIGH) AND EIPD_status != APPROVED -> BLOCK_DEPLOY`.
-* **Excepción Controlada:** En casos excepcionales debidamente documentados, la Administración Superior podrá autorizar un despliegue con riesgo residual explícito. El uso reiterado de esta excepción será considerado un **indicador de riesgo sistémico** y deberá ser reportado al Comité de Riesgos.
+**1.1. Hipótesis Operativa de Riesgo**
+Para efectos de la gestión de riesgos de esta organización, se establece la siguiente premisa operativa: bajo el escenario fiscalizador más estricto razonablemente previsible, la mera "buena fe" o la declaración de intenciones no constituirán, por sí solas, defensas suficientes ante un procedimiento sancionatorio.
 
-### 2.2. Decisiones Automatizadas y Perfilamiento
-* **Metadatos:** Todo registro de una decisión automatizada debe incluir `is_automated = TRUE`, `model_version` y `logic_hash`.
-* **Derecho a Explicación:** El sistema debe tener la capacidad de reconstruir los **factores determinantes relevantes para la decisión**, en un nivel de abstracción comprensible para el titular, conforme al estado del arte técnico y regulatorio.
-    * *Límite:* Lo anterior no implica la revelación de secretos comerciales, propiedad intelectual ni la exposición íntegra del modelo, sino una explicación funcional suficiente conforme a la normativa vigente.
+En consecuencia, esta política define que la **principal prueba de diligencia demostrable** será la evidencia técnica inmutable y verificable de cumplimiento (principio de Responsabilidad Proactiva Demostrable), sin perjuicio de otros medios de prueba admisibles en derecho.
 
-### 2.3. Transparencia Activa y Rectificación
-* **Endpoint de Transparencia:** API `/privacy/my-status` que expone al titular la finalidad, base legal y fecha de caducidad (TTL) de sus datos.
-* **Rectificación Sistémica:** El sistema debe permitir la actualización de datos incorrectos y **propagar el cambio** a todos los sistemas derivados mediante linaje activo (evitando la inconsistencia de datos).
-
-### 2.4. Control de Encargados de Tratamiento (SaaS)
-* **Auditoría Técnica:** Exigencia contractual de ingestión de logs de acceso del proveedor hacia el SIEM central de la organización.
-* **Borrado Verificable:** Capacidad técnica de ejecutar y auditar una purga efectiva en el entorno del encargado (SaaS).
-    * *Consecuencia Contractual:* La imposibilidad técnica o contractual de cumplir estos requisitos será considerada causal suficiente para la **no contratación, terminación o migración del servicio**, según corresponda.
-
-### 2.5. Registro de Incidentes
-Todo evento de seguridad o desviación normativa debe quedar registrado sistemáticamente.
-* **Criterio de Activación:** El registro se activa ante la **potencial afectación** a derechos de titulares, integridad de datos o cumplimiento normativo, aun cuando el impacto final sea descartado posteriormente.
-* **Bitácora Inmutable:** Registro de causa raíz, alcance, impacto y medidas correctivas (Ver **Anexo D**).
-
-### 2.6. Delimitación del Alcance Legal del Tratamiento
-No todos los tratamientos están sujetos a idénticos requisitos operativos. La arquitectura debe clasificar cada flujo en el **Catálogo de Datos** según su base de legitimidad:
-
-* **Obligación Legal / Interés Público:** Tratamiento forzoso (no borrable a petición).
-* **Ejecución Contractual:** Necesario para el servicio.
-* **Consentimiento Expreso:** Revocable y requiere gestión de estado (`boolean`).
-* **Interés Legítimo:** Requiere prueba de ponderación de derechos.
-
-> **Regla de Diseño:** La exigencia de bloqueo o borrado se aplica diferenciada según esta clasificación técnica.
+> **Nota de Alcance:** Este criterio no pretende fijar el estándar jurídico definitivo —competencia exclusiva de los tribunales—, sino establecer un **umbral interno de diligencia técnica reforzada** para blindar a la organización.
 
 ---
 
-## 3. MATRIZ DE RIESGO SANCIONATORIO (INTERPRETACIÓN DE MÁXIMA SEVERIDAD)
+### 2. OBLIGACIONES TÉCNICAS Y ESTADOS DEL SISTEMA
 
-> **Nota de Uso:** Esta matriz no representa la calificación legal definitiva de infracciones, sino un instrumento interno de priorización de riesgo bajo el escenario más adverso.
+Además de las salvaguardas generales descritas en los capítulos 1 a 16 del Manual de Gobernanza, se integran los siguientes **bloques de control crítico**, de implementación obligatoria para cumplir con la nueva legislación.
 
-| Falla Arquitectónica | Infracción (Ley 21.719) | Sanción / Riesgo Potencial |
+#### 2.1. La Evaluación de Impacto (EIPD) en el Ciclo de Desarrollo
+
+La Evaluación de Impacto en Protección de Datos (EIPD) dejará de ser un documento administrativo estático para convertirse en un **Gate de Despliegue (Deployment Gate)** dentro del flujo de CI/CD.
+
+* **Mecanismo de Control:** El pipeline de integración continua deberá validar programáticamente la existencia de un `EIPD_ID` aprobado antes de permitir el paso a producción.
+* **Criterio de Aplicación:** Será obligatorio para tratamientos que involucren datos sensibles, volúmenes masivos u operaciones de IA/Perfilamiento.
+
+**Regla de Bloqueo Automático:**
+Se instruye la implementación de la siguiente lógica de bloqueo en los sistemas de despliegue:
+
+> SI (Nivel_Riesgo == ALTO) Y (Estado_EIPD != APROBADO) ENTONCES -> BLOQUEAR_DESPLIEGUE
+
+* **Excepción Controlada:** Únicamente la Administración Superior podrá autorizar un despliegue manual saltando este control, asumiendo el riesgo residual explícito. El uso reiterado de esta excepción será auditado como un indicador de riesgo sistémico.
+
+#### 2.2. Transparencia en Decisiones Automatizadas y Perfilamiento
+
+Para dar cumplimiento al derecho a explicación consagrado en la ley, todo sistema que ejecute decisiones automatizadas deberá registrar metadatos suficientes para su auditabilidad.
+
+* **Requisitos del Registro:** Cada transacción deberá almacenar los campos `is_automated`, `model_version` y `logic_hash`.
+* **Capacidad de Explicación:** El sistema deberá mantener la capacidad técnica de reconstruir los **factores determinantes** de la decisión en un lenguaje comprensible para el titular. Esto no implica la revelación de secretos comerciales o propiedad intelectual del algoritmo, sino la entrega de una explicación funcional suficiente.
+
+#### 2.3. Transparencia Activa y Gestión de Derechos
+
+La organización debe garantizar que el ejercicio de derechos no dependa de procesos manuales lentos.
+
+* **Disponibilidad de Información:** Se habilitará un endpoint o servicio de consulta (`/privacy/my-status`) que permita al titular conocer la finalidad, base legal y tiempo de vida (TTL) de sus datos en tiempo real.
+* **Integridad en la Rectificación:** Los sistemas deben implementar un "Linaje Activo". Al rectificarse un dato maestro, el cambio debe propagarse automáticamente a los sistemas descendentes para evitar inconsistencias que vulneren la calidad del dato.
+
+#### 2.4. Control de la Cadena de Suministro (Proveedores SaaS)
+
+La responsabilidad por los datos no se extingue al contratar servicios de terceros (Encargados de Tratamiento).
+
+* **Visibilidad:** Se exigirá contractualmente la ingesta de logs de actividad del proveedor hacia el SIEM central de la organización.
+* **Soberanía de Datos:** El proveedor deberá demostrar capacidad técnica de borrado seguro y verificable.
+* **Consecuencia:** La imposibilidad técnica o contractual de un proveedor para cumplir estos estándares constituirá causal válida para la no contratación, terminación anticipada o migración del servicio.
+
+#### 2.5. Registro Inmutable de Incidentes
+
+Todo evento de seguridad con potencial afectación a datos personales deberá ser registrado sistemáticamente, independientemente de si el incidente se materializa o descarta posteriormente. El registro deberá ser inmutable e incluir análisis de causa raíz, alcance y medidas correctivas (conforme al Anexo D).
+
+#### 2.6. Clasificación y Alcance Legal del Tratamiento
+
+Para evitar borrados indebidos o retenciones ilegales, el Catálogo de Datos deberá clasificar cada activo según su base de legitimidad:
+
+1. **Obligación Legal / Interés Público:** Datos no borrables a petición.
+2. **Ejecución Contractual:** Datos necesarios para la vigencia del servicio.
+3. **Consentimiento Expreso:** Datos sujetos a revocación inmediata.
+4. **Interés Legítimo:** Datos sujetos a prueba de ponderación.
+
+> **Regla de Diseño:** Los mecanismos de bloqueo y supresión deberán comportarse de manera diferenciada según esta etiqueta técnica.
+
+---
+
+### 3. MATRIZ DE RIESGO Y RESPONSABILIDAD
+
+Esta sección tipifica las consecuencias de las fallas arquitectónicas bajo una interpretación de severidad máxima, con el fin de priorizar la inversión en seguridad.
+
+| Falla Arquitectónica | Calificación de Riesgo Interno | Sanción Potencial (Ref. Ley 21.719) |
 | :--- | :--- | :--- |
-| **Falta de EIPD en IA** | Gravísima | Multa hasta 20.000 UTM / Suspensión de IA |
-| **Opacidad en Scoring** | Grave | Vulneración del Derecho a Explicación |
-| **Dato sin base legal** | Gravísima | Orden de eliminación total de la base |
-| **Falta de Registro** | Gravísima | Agravante por reincidencia sistémica |
+| **Falta de EIPD en IA** | Máxima Severidad | Multa hasta 20.000 UTM / Suspensión del tratamiento |
+| **Opacidad en Scoring** | Alta | Vulneración del derecho a explicación |
+| **Dato sin base legal** | Máxima Severidad | Orden de eliminación total de la base de datos |
+| **Falta de Registro** | Alta | Agravante por reincidencia sistémica |
 
-> **NOTA DE INTERPRETACIÓN DE RIESGO:**
-> Las presunciones de negligencia y clasificaciones descritas en este protocolo corresponden a una **política interna de gestión de riesgo**, diseñada bajo el escenario más estricto posible para exceder el estándar legal mínimo. Su finalidad es anticipar el criterio fiscalizador de la Agencia, asegurando la defendibilidad de la organización ante el peor escenario, sin perjuicio de la defensa legal específica en cada caso.
+#### 3.1. Responsabilidad del Gobierno Corporativo
+La aprobación y financiamiento de este protocolo se considera un acto esencial de Gobierno Corporativo. La falta de implementación de estas medidas dificulta la capacidad de la organización para demostrar la "diligencia debida" exigida por la ley ante una fiscalización.
 
-### 3.1. Responsabilidad del Directorio (Gobierno Corporativo)
-La aprobación, financiamiento y priorización de este protocolo constituye un acto de **Gobierno Corporativo**.
+#### 3.2. Responsabilidad Directiva (Aplicable al Sector Público)
 
-* **Defensa de Diligencia:** Este anexo y su ejecución operan como evidencia de advertencia temprana y control activo.
-* **Riesgo de Omisión:** La ausencia de ejecución será considerada internamente como una decisión consciente de asumir el riesgo sancionatorio, debilitando la defensa de "desconocimiento" o "buena fe".
-
-### 3.2. Responsabilidad Personal (Sector Público)
-
-> **ADVERTENCIA AL JEFE DE SERVICIO (ALERTA DE RESPONSABILIDAD PERSONAL)**
+> **ADVERTENCIA DE RESPONSABILIDAD ADMINISTRATIVA**
 >
-> Bajo la Ley 21.719, la protección de datos deja de ser una función técnica delegable y pasa a ser un **deber directo de dirección**.
-> En una fiscalización de la Agencia, la ausencia de evidencia técnica (linaje, logs inmutables, borrado seguro) no se interpreta como una carencia tecnológica, sino como una **falta de control directivo sobre activos críticos**.
+> Se hace presente a las jefaturas de servicio y directivos que, bajo el nuevo estándar, la ausencia de controles técnicos (trazabilidad, logs, borrado seguro) puede ser interpretada por el ente fiscalizador como una **falta al deber de control jerárquico** sobre los activos de información.
 >
-> **En el sector público, esta omisión activa consecuencias directas:**
+> Esta omisión puede derivar en:
 > 
-> * **Responsabilidad Administrativa:** Sumarios por falta al deber de dirección y control jerárquico.
-> * **Afectación Patrimonial:** Riesgo de descuentos en remuneraciones y pérdida de asignaciones de modernización/gestión.
-> * **Evaluación ADP:** Riesgo de no renovación o remoción por pérdida de confianza (falta de probidad administrativa).
-> * **Agravantes:** Si la falta de controles sugiere negligencia sistemática en el tiempo.
+> * Responsabilidad administrativa (sumarios).
+> * Afectación patrimonial institucional y personal.
+> * Impacto negativo en evaluaciones de Alta Dirección Pública (ADP).
 >
-> **PRINCIPIO DE DEFENSA:**
-> La arquitectura es el **único escudo funcional** que permite al Jefe de Servicio demostrar que actuó con la diligencia debida. Operar sin una **Arquitectura Defensiva** implementada **puede incrementar significativamente la exposición al riesgo personal y profesional** asociada al cargo, sin perjuicio de la evaluación caso a caso conforme a la ley y al debido proceso. Este anexo no sustituye ni altera el régimen legal de responsabilidad administrativa vigente.
+> **Principio de Defensa:** Esta arquitectura no es opcional; constituye el **mecanismo estructural de defensa** para acreditar que la autoridad actuó con la diligencia debida.
 
 ---
 
-## 4. CRONOGRAMA DETALLADO DE ADECUACIÓN (BATTLE PLAN 2026)
+## PARTE II — PLAN ESTRATÉGICO DE IMPLEMENTACIÓN 2026
 
-> **ADVERTENCIA EJECUTIVA:**
-> Este cronograma no es una recomendación técnica opcional; es la **última ventana operativa razonable** antes de la pérdida de control y la exposición a pasivos legales irreversibles, **considerando el contexto normativo y tecnológico conocido al momento de su redacción**.
->
-> *Priorización:* En escenarios de restricción presupuestaria, técnica o de tiempo, la priorización deberá enfocarse primero en tratamientos que involucren **datos sensibles, decisiones automatizadas o alto impacto en derechos de titulares**.
+Para asegurar el cumplimiento en la fecha límite, se establece el siguiente cronograma de ejecución forzosa.
 
-### FASE 1: DIAGNÓSTICO Y CUARENTENA (Q1: Enero - Marzo)
-*Estado: **CRÍTICO / EN CURSO**.*
+### FASE 1: DIAGNÓSTICO Y CONTENCIÓN (Q1: Enero – Marzo)
+*Objetivo: Determinar la exposición real y detener la creación de nueva deuda técnica.*
 
-* **Discovery:** Escaneo de bases de datos buscando PII no gobernada.
-* **Congelamiento:** Se prohíbe la creación de nuevas tablas productivas sin esquema validado (Ver **Cap. 9 - Airlock**).
+* **Congelamiento:** Se prohíbe la creación de nuevas tablas productivas sin esquema validado (Airlock activo).
+* **Discovery:** Escaneo automatizado de bases de datos buscando PII no gobernada.
+* **Clasificación:** Etiquetado masivo por base legal (Verde / Amarillo / Rojo).
 
-### FASE 2: INGENIERÍA DE DEFENSA (Q2: Abril - Junio)
-*Objetivo: Construir los muros.*
+### FASE 2: INGENIERÍA DE DEFENSA (Q2: Abril – Junio)
+*Objetivo: Implementar los bloqueos estructurales en el software.*
 
-* **Gate EIPD:** Bloqueo automatizado en CI/CD para modelos de IA y tratamientos masivos.
-* **Motor de Rectificación:** Scripts de propagación de cambios en el Data Lake.
+* **Gate EIPD:** Implementación del bloqueo en CI/CD.
+* **Airlock:** Validación obligatoria en la ingesta de datos.
+* **Automatización:** Despliegue de APIs de derechos ARCO.
 
-### FASE 3: PURGA Y TRANSPARENCIA (Q3: Julio - Septiembre)
-*Objetivo: Eliminar pasivos.*
+### FASE 3: PURGA Y NORMALIZACIÓN (Q3: Julio – Septiembre)
+*Objetivo: Reducir los pasivos acumulados.*
 
-* **La Gran Purga:** Ejecución de *Crypto-shredding* sobre datos tóxicos o caducos identificados en Fase 1.
-* **Ultimátum SaaS:** Bloqueo o migración de proveedores que no certifiquen cumplimiento técnico.
+* **Crypto-shredding:** Eliminación verificable de datos clasificados como "Rojo" (sin base legal).
+* **Auditoría SaaS:** Evaluación técnica de proveedores críticos.
+* **Registro:** Generación automática del registro de actividades derivado del catálogo.
 
-### FASE 4: SIMULACRO Y GO-LIVE (Q4: Octubre - Diciembre)
-*Objetivo: Estrés y Operación.*
+### FASE 4: SIMULACIÓN Y VALIDACIÓN (Q4: Octubre – Noviembre)
+*Objetivo: Probar la resistencia de la organización antes de la vigencia.*
 
-* **Simulacro de Brecha:** Prueba de notificación en <72h usando Linaje de Datos y Logs WORM.
-* **Code Freeze:** Auditoría final de "caja negra" simulando a la Agencia.
-* **01/12/2026:** **INICIO DE VIGENCIA.** Riesgo legal activo al 100%.
+* **Simulacro de Brecha:** Prueba de notificación a la Agencia en <72 horas.
+* **Auditoría Externa:** Revisión de "caja negra" simulando una fiscalización hostil.
+* **Code Freeze:** Congelamiento pre-vigencia para asegurar estabilidad.
 
-> **Nota de Flexibilidad Normativa:** Las fechas indicadas responden a la entrada en vigencia prevista en la Ley 21.719. Si la autoridad administrativa o legislativa modifica los plazos de vacancia legal, este cronograma se ajustará proporcionalmente sin alterar la secuencia lógica de implementación técnica.
+### 01 DE DICIEMBRE 2026: INICIO DE RÉGIMEN SANCIONATORIO
+Desde este momento, la exposición legal depende íntegramente de la capacidad del sistema para generar evidencia continua de cumplimiento.
+
+---
+
+## CRITERIOS DE CONTROL (DEFINITION OF DONE)
+
+| Fase | Criterio de Éxito (Booleano) |
+| :--- | :--- |
+| **Fase 1** | ☑ 100% bases escaneadas <br> ☑ PII sin dueño < 5% <br> ☑ Airlock bloqueando |
+| **Fase 2** | ☑ Gate EIPD bloqueando despliegues reales <br> ☑ API derechos funcional |
+| **Fase 3** | ☑ Evidencia técnica de eliminación <br> ☑ 100% proveedores críticos evaluados |
+| **Fase 4** | ☑ Informe forense generado en <72h <br> ☑ Sin hallazgos críticos en auditoría |
+
+## MATRIZ DE RESPONSABILIDAD (RACI)
+
+| Fase | Responsible (Ejecuta) | Accountable (Responde) | Consulted (Experto) | Informed (Notificado) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Q1** | Arquitecto Datos | CDO | DPO / Legal | Directorio |
+| **Q2** | Data Eng / DevOps | CTO | CDO / DPO | Directorio |
+| **Q3** | CISO / Operaciones | Gerencia General | Legal / Compras | Directorio |
+| **Q4** | CISO / Red Team | CDO | Auditoría | Directorio |
+
+## INDICADORES CRÍTICOS (RED FLAGS)
+
+Se establece la obligación de escalamiento formal al Comité de Riesgos si ocurre cualquiera de los siguientes eventos:
+
+1.  **> 15% de datos históricos** sin base legal trazable identificada.
+2.  Imposibilidad técnica de implementar el **Gate EIPD** en sistemas core del negocio.
+3.  Un proveedor crítico **impide la auditoría** o el borrado verificable de datos.
+4.  El simulacro de brecha demora **>72 horas** en la generación del informe forense preliminar.
+
+*El escalamiento debe constar en acta y activar una decisión formal de mitigación o aceptación de riesgo.*
+
+---
+
+> **Nota de Flexibilidad Normativa:**
+> Las fechas indicadas responden a la entrada en vigencia prevista en la Ley 21.719. Si la autoridad administrativa o legislativa modifica los plazos de vacancia legal, este cronograma se ajustará proporcionalmente sin alterar la secuencia lógica de implementación técnica.
 
 > **Veredicto Final:**
-> Desde la perspectiva de esta **política interna de gestión de riesgos**, si la Agencia fiscaliza y no encuentra estos bloques operativos, la arquitectura se considera **indefensa**. Cumplir con la Ley 21.719 no es un ejercicio de redacción de políticas; es un ejercicio de **ingeniería con conciencia legal**.
+> Desde la perspectiva de esta **política interna de gestión de riesgos**, si la Agencia fiscaliza y no encuentra estos bloques operativos, la arquitectura se considera **estructuralmente insuficiente para efectos de defensa técnica**. Cumplir con la Ley 21.719 no es un ejercicio de redacción de políticas; es un ejercicio de **ingeniería con conciencia legal**.
