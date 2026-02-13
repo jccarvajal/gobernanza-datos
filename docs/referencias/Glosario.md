@@ -113,6 +113,11 @@ Quien no use estos términos con estas definiciones, está operando bajo deuda t
 * **Definición:** Introducción deliberada de controles, validaciones y bloqueos técnicos que ralentizan acciones de alto riesgo. La fricción no es un costo político, sino un mecanismo de seguridad para evitar daño sistémico.
 * **Referencia Principal:** Epílogo / Capítulo 15.
 
+**Gate de Despliegue (Deployment Gate)**
+
+* **Definición:** Punto de control automatizado en el pipeline de CI/CD que impide físicamente el paso a producción de un software si no cumple condiciones predefinidas (ej: `EIPD_Approved = True`). Transforma el cumplimiento normativo de un "checklist de papel" a una "condición de compilación" bloqueante.
+* **Referencia Principal:** Anexo F / Capítulo 11.
+
 **Gobernanza como Código (Governance as Code)**
 
 * **Definición:** La práctica de implementar políticas de cumplimiento (privacidad, seguridad, retención) directamente en la infraestructura y el software, en lugar de en manuales de procedimiento.
@@ -133,10 +138,25 @@ Quien no use estos términos con estas definiciones, está operando bajo deuda t
 * **Definición:** Evento en el que un dato crítico es creado, modificado, usado o expuesto fuera de los controles definidos (ej: KPI usado en Directorio sin definición certificada), aun cuando no exista brecha de seguridad inmediata.
 * **Referencia Principal:** Anexo B / Anexo E.
 
+**Infraestructura Funcional**
+
+* **Definición:** Categoría de activo tecnológico que, a diferencia de un mero "producto digital", intermedia derechos fundamentales, opera a escala masiva o soporta procesos críticos. Su clasificación como tal activa automáticamente obligaciones de **Ingeniería de Contención** (Nivel 3) según el Estándar de Gobernanza Proporcional.
+* **Referencia Principal:** Anexo G / Capítulo 2.
+
+**Ingeniería de Contención**
+
+* **Definición:** Disciplina de diseño de sistemas enfocada no en evitar el error (que se asume inevitable en sistemas complejos), sino en neutralizar su propagación catastrófica. Incluye la implementación obligatoria de *Kill Switches*, mecanismos de degradación controlada y aislamiento de fallos en sistemas de alto impacto.
+* **Referencia Principal:** Anexo G / Capítulo 15.
+
 **Inmutabilidad**
 
 * **Definición:** Propiedad de un registro (log) que garantiza matemáticamente que no ha sido modificado desde su creación. Es la base de la defensa forense ante la Agencia.
 * **Referencia Principal:** Anexo D.
+
+**Integridad Funcional (Anti-Fragmentación)**
+
+* **Definición:** Principio de evaluación de riesgo que prohíbe diluir la criticidad de un sistema dividiéndolo en microservicios o componentes menores. La gobernanza se aplica a la orquestación completa del sistema funcional, impidiendo el "gaming" arquitectónico para evadir controles de Nivel 3.
+* **Referencia Principal:** Anexo G.
 
 **Kill Switch (Botón Rojo)**
 
@@ -178,6 +198,11 @@ Quien no use estos términos con estas definiciones, está operando bajo deuda t
 * **Definición:** Ingeniería preventiva. Significa que la privacidad es la configuración por defecto del sistema y que las medidas de protección se integran en la arquitectura desde el día cero, no como un parche posterior.
 * **Referencia Principal:** Capítulo 11.
 
+**Proporcionalidad Arquitectónica**
+
+* **Definición:** Principio de diseño que establece que el nivel de formalidad, trazabilidad y control exigido a un sistema debe escalar proporcionalmente a su poder sistémico e impacto potencial en derechos, escala o irreversibilidad. No todos los sistemas requieren el mismo estándar; pero aquellos clasificados como **Infraestructura Funcional** activan obligaciones reforzadas de Ingeniería de Contención y responsabilidad nominativa.
+* **Referencia Principal:** Anexo G.
+
 **RAG (Retrieval-Augmented Generation)**
 
 * **Definición:** Arquitectura cognitiva que obliga a un LLM (modelo de lenguaje) a consultar una base de conocimientos verificada (Vector DB) antes de generar una respuesta, reduciendo la alucinación.
@@ -217,6 +242,11 @@ Quien no use estos términos con estas definiciones, está operando bajo deuda t
 
 * **Definición:** Acto explícito mediante el cual la Alta Dirección asume un riesgo técnico previamente advertido, dejando constancia escrita de que la decisión excede la recomendación profesional. Libera al rol técnico de responsabilidad funcional.
 * **Referencia Principal:** Anexo A / Anexo E.
+
+**Trazabilidad de la Omisión**
+
+* **Definición:** Registro forense obligatorio de la decisión de **NO actuar** ante una alerta crítica o incidente (ej: no activar un *Kill Switch*). Transforma la inacción (usualmente invisible) en una decisión ejecutiva auditable, eliminando la "negación plausible" de la responsabilidad directiva.
+* **Referencia Principal:** Anexo G / Anexo D.
 
 **TTL (Time-To-Live)**
 
