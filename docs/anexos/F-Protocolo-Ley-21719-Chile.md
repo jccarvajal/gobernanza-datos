@@ -19,6 +19,7 @@
 Con la entrada en vigencia plena de la Ley 21.719 el **01 de diciembre de 2026**, la Agencia de Protección de Datos iniciará sus facultades fiscalizadoras. A diferencia de normativas anteriores, la Agencia no solo auditará la existencia de políticas escritas, sino que fiscalizará la **arquitectura efectiva** de los sistemas de tratamiento de información.
 
 **1.1. Hipótesis Operativa de Riesgo**
+
 Para efectos de la gestión de riesgos de esta organización, se establece la siguiente premisa operativa: bajo el escenario fiscalizador más estricto razonablemente previsible, la mera "buena fe" o la declaración de intenciones no constituirán, por sí solas, defensas suficientes ante un procedimiento sancionatorio.
 
 En consecuencia, esta política define que la **principal prueba de diligencia demostrable** será la evidencia técnica inmutable y verificable de cumplimiento (principio de Responsabilidad Proactiva Demostrable), sin perjuicio de otros medios de prueba admisibles en derecho.
