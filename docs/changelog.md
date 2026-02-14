@@ -6,21 +6,21 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 
 ## [1.1.0] - 2026-02-13
 
-### Actualización: Arquitectura de Contención y Proporcionalidad
+### Actualización: Arquitectura Universal y Contención
 
-Esta versión introduce mecanismos de **ingeniería de contención** (Anexo G) y endurece la postura defensiva ante la entrada en vigencia del régimen sancionatorio en Chile (Anexo F). Se pasa de la "teoría del cumplimiento" a la "arquitectura de bloqueo".
+Esta versión marca la evolución estratégica del texto hacia una **"Arquitectura de Defensa Universal"**. Se supera el enfoque puramente local para establecer una capa de ingeniería compatible con cualquier estándar normativo global (DAMA, GDPR, Ley 21.719, MDGE), enfocándose en la **verificabilidad técnica** de la gobernanza.
 
 #### Agregado (New Features)
-* **Anexo G (Estándar de Gobernanza Proporcional):** Se incorpora el **EGP** como norma de arquitectura institucional.
-    * **Distinción Ontológica:** Separación formal entre "Producto Digital" (MVP) e "Infraestructura Funcional" (Sistémica).
-    * **Ingeniería de Contención:** Obligatoriedad de *Kill Capability* (Botón de Pánico) y *Trazabilidad de la Omisión* para sistemas Nivel 3.
-    * **Mecanismo Anti-Gaming:** Facultad de la 2ª Línea para reclasificar unilateralmente sistemas sub-valuados por el negocio, con reporte obligatorio al Directorio.
+* **Anexo G (Estándar de Gobernanza Proporcional):** Se incorpora el **EGP** como constitución técnica para sistemas de alto impacto.
+    * **Distinción Ontológica:** Separación formal entre "Producto Digital" (MVP) e "Infraestructura Funcional".
+    * **Ingeniería de Contención:** Obligatoriedad de *Kill Capability* y *Trazabilidad de la Omisión* para sistemas Nivel 3.
+    * **Mecanismo Anti-Gaming:** Facultad de la 2ª Línea para reclasificar unilateralmente sistemas sub-valuados por el negocio.
+* **Capítulo 1 (Alineamiento Estratégico):** Nueva sección 1.5 que define la relación de "Acoplamiento Arquitectónico" con DAMA y modelos estatales globales. Se posiciona al libro como la **capa de ejecución** que impide que el estándar normativo sea vulnerado en producción.
+* **Glosario de Ingeniería Legal:** Inclusión de 6 términos de control crítico (*Gate de Despliegue*, *Infraestructura Funcional*, *Proporcionalidad Arquitectónica*, *Trazabilidad de la Omisión*, etc.).
 
-#### Modificado (Hardening)
-* **Anexo F (Protocolo Ley 21.719 - Chile 2026):** Se reestructura el protocolo de adecuación, transformándolo de una guía de cumplimiento a un **Plan de Batalla Operativo**.
-    * **Gate de Despliegue (EIPD):** La Evaluación de Impacto deja de ser documental y se convierte en una condición de bloqueo automatizado en el pipeline CI/CD (`deployment gate`).
-    * **Cláusula de Responsabilidad Directiva:** Se explicita la "Falta al Deber de Control Jerárquico" para transferir el riesgo administrativo y patrimonial a las jefaturas que obstaculicen la implementación técnica.
-    * **Cronograma de Purga (Q1-Q4):** Definición estricta de hitos de *Crypto-shredding* y *Airlock* de datos para llegar "limpios" al 01 de diciembre de 2026.
+#### Modificado (Hardening & Global Scope)
+* **Anexo F (Protocolo de Adecuación):** Se redefine como un "Plan de Batalla" operacional. Se endurecen los controles (Gates de Bloqueo, Crypto-shredding) transformando el cumplimiento burocrático en condiciones de compilación (Deployment Gates).
+* **Refinamiento Doctrinal:** Se reemplaza el concepto de "cumplimiento operativo" por **"arquitectura de cumplimiento técnico verificable"** para eliminar ambigüedades y reforzar el estándar de evidencia.
 
 ## [1.0.0] - 2026-02-08
 
