@@ -111,7 +111,7 @@ La aprobación y financiamiento de este protocolo se considera un acto esencial 
 > * Afectación patrimonial institucional y personal.
 > * Impacto negativo en evaluaciones de Alta Dirección Pública (ADP).
 >
-> **Principio de Defensa:** Esta arquitectura no es opcional; constituye el **mecanismo estructural de defensa** para acreditar que la autoridad actuó con la diligencia debida.
+> **Principio de Defensa:** Esta arquitectura no es opcional; constituye el **mecanismo estructural de defensa** para acreditar que la autoridad actuó con la debida diligencia.
 
 ---
 
