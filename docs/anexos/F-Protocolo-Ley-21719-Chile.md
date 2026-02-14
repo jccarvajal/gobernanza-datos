@@ -24,7 +24,7 @@ Para efectos de la gestión de riesgos de esta organización, se establece la si
 
 En consecuencia, esta política define que la **principal prueba de diligencia demostrable** será la evidencia técnica inmutable y verificable de cumplimiento (principio de Responsabilidad Proactiva Demostrable), sin perjuicio de otros medios de prueba admisibles en derecho.
 
-> **Nota de Alcance:** Este criterio no pretende fijar el estándar jurídico definitivo —competencia exclusiva de los tribunales—, sino establecer un **umbral interno de diligencia técnica reforzada** para blindar a la organización.
+> **Nota de Alcance:** Este criterio no pretende fijar el estándar jurídico definitivo, competencia exclusiva de los tribunales, sino establecer un **umbral interno de diligencia técnica reforzada** para blindar a la organización.
 
 ---
 
@@ -97,7 +97,7 @@ Esta sección tipifica las consecuencias de las fallas arquitectónicas bajo una
 | **Falta de Registro** | Alta | Agravante por reincidencia sistémica |
 
 #### 3.1. Responsabilidad del Gobierno Corporativo
-La aprobación y financiamiento de este protocolo se considera un acto esencial de Gobierno Corporativo. La falta de implementación de estas medidas dificulta la capacidad de la organización para demostrar la "diligencia debida" exigida por la ley ante una fiscalización.
+La aprobación y financiamiento de este protocolo se considera un acto esencial de Gobierno Corporativo. La falta de implementación de estas medidas dificulta la capacidad de la organización para demostrar la "debida diligencia" exigida por la ley ante una fiscalización.
 
 #### 3.2. Responsabilidad Directiva (Aplicable al Sector Público)
 
