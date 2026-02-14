@@ -80,7 +80,27 @@ No queremos "todos los datos". Queremos la cantidad mínima de datos de alta pur
 
 ---
 
-## 1.5. Conclusión: De Almaceneros a Ingenieros Nucleares
+### 1.5. Alineamiento Estratégico: ¿Y qué pasa con DAMA y los marcos estatales?
+
+Este libro no reemplaza los estándares que ya utilizas o que la regulación de tu jurisdicción exige adoptar, como el **DMBOK de DAMA** o los modelos de gestión de datos definidos por el Estado (por ejemplo, el **MDGE** en Chile, la **Estrategia Nacional de Datos** en España o equivalentes locales).
+
+Por el contrario, asume que dichos marcos constituyen la base estructural necesaria de cualquier sistema de gobernanza formal: definen dominios, roles, procesos y responsabilidades.
+
+El presente texto aborda una capa distinta y complementaria: la **arquitectura de cumplimiento técnico verificable**.
+
+Mientras DAMA y los estándares gubernamentales establecen el **qué** debe existir en una organización (políticas, stewardship, calidad, metadatos), este libro desarrolla el **cómo** garantizar que esos elementos sean inexorables en la práctica técnica, incluso bajo presión operativa, restricciones presupuestarias o escenarios de fiscalización.
+
+En términos simples:
+
+* **El Estándar (DAMA/Estatal)** define el marco normativo y organizacional.
+* **La Gobernanza de Datos Defensiva** implementa los mecanismos técnicos que impiden que ese marco sea vulnerado en producción.
+
+No se trata de un modelo alternativo, sino de una capa de ingeniería que operacionaliza el estándar obligatorio, cualquiera que este sea, y lo vuelve verificable, auditable y resistente.
+
+
+---
+
+## 1.6. Conclusión: De Almaceneros a Ingenieros Nucleares
 
 El rol de los responsables de Datos, Tecnología, Riesgo y Legal ya no es administrar bibliotecas ni llenar lagos de datos (*Data Lakes* que terminan siendo *Data Swamps*).
 
