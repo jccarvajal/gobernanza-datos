@@ -84,6 +84,7 @@ Ningún sistema clasificado como Nivel 3 podrá entrar en operación productiva 
 Debe existir un mecanismo técnico probado que permita desactivar o limitar la funcionalidad crítica de inmediato (modo degradado) sin requerir el apagado total de la organización.
 
 > **Estándar:** El mecanismo deberá ser probado **al menos una vez al año mediante simulación controlada**.
+> 
 > **Trazabilidad de la Omisión:** La decisión de **no activar** el mecanismo ante una alerta crítica deberá quedar documentada con su respectiva justificación técnica y la firma del responsable nominativo.
 
 ### 5.2. Trazabilidad Decisional (Registro Forense)
