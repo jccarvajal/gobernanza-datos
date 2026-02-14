@@ -151,7 +151,7 @@ Estos anexos son herramientas de implementación inmediata, blindadas legal y t�
 ---
 
 ## Changelog
-* **v1.1 (Febrero 2026):** Escalada a **Arquitectura de Defensa Universal**. Incorporación del Estándar de Gobernanza Proporcional (Anexo G), alineamiento estructural con DAMA/Estándares Globales y endurecimiento del Protocolo de Adecuación (Anexo F).
+* **v1.1 (Febrero 2026):** Incorporación del Estándar de Gobernanza Proporcional (Anexo G), alineamiento estructural con DAMA/Estándares Globales y endurecimiento del Protocolo de Adecuación (Anexo F).
 * Ver [Historial Completo](./changelog.md).
 
 ## Sugerencias y Mejoras
