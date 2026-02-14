@@ -76,7 +76,7 @@ $$Costo = Almacenamiento + Proceso + (P_{Brecha} \times Costo_{Multa}) + Latenci
 Si tratamos el dato como Uranio, la conclusión es evidente: **Minimización**.
 No queremos "todos los datos". Queremos la cantidad mínima de datos de alta pureza (enriquecidos) necesarios para mover la turbina de la decisión estratégica. Todo lo demás es desecho radioactivo que debe ser neutralizado.
 
-> **Advertencia Operativa:** Guardar logs de hace 10 años "por si acaso" —**salvo exigencia regulatoria o probatoria explícita**— no es una política de respaldo conservadora; es acumulación negligente de material combustible. En la arquitectura legal moderna, si no puedes justificar el valor comercial, normativo o probatorio de un dato hoy, su valor es cero, pero su riesgo es mayor a cero. Borrar no es una pérdida; es higiene industrial.
+> **Advertencia Operativa:** Guardar logs de hace 10 años "por si acaso", **salvo exigencia regulatoria o probatoria explícita**, no es una política de respaldo conservadora; es acumulación negligente de material combustible. En la arquitectura legal moderna, si no puedes justificar el valor comercial, normativo o probatorio de un dato hoy, su valor es cero, pero su riesgo es mayor a cero. Borrar no es una pérdida; es higiene industrial.
 
 ---
 
