@@ -121,6 +121,7 @@ La designación de un Ejecutivo C-Level como responsable no exime la obligación
 La sub-clasificación deliberada de un activo (por ejemplo, mediante fragmentación para evitar el Nivel 3) constituirá un **incumplimiento grave del sistema de control interno**.
 
 > **Facultad:** La 2ª Línea de Defensa tendrá la facultad de **reclasificar unilateralmente** un sistema cuando detecte inconsistencias, activando de inmediato los controles de Nivel 3.
+> 
 > **Contrapeso:** Toda reclasificación deberá ser reportada formalmente al Comité de Riesgos (o instancia equivalente) en el siguiente ciclo de gobernanza, acompañando la justificación y evidencia técnica. La eventual reversión de esta medida requerirá una resolución trazable a nivel ejecutivo.
 
 ---
