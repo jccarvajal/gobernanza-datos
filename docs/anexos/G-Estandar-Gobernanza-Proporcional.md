@@ -124,6 +124,18 @@ La sub-clasificación deliberada de un activo (por ejemplo, mediante fragmentaci
 > 
 > **Contrapeso:** Toda reclasificación deberá ser reportada formalmente al Comité de Riesgos (o instancia equivalente) en el siguiente ciclo de gobernanza, acompañando la justificación y evidencia técnica. La eventual reversión de esta medida requerirá una resolución trazable a nivel ejecutivo.
 
+### 7.3. Principio de Imputabilidad Formal (The Buck Stops Here)
+
+La gobernanza defensiva rechaza la noción de "responsabilidad compartida" si esta implica "culpabilidad diluida". La responsabilidad sobre una Infraestructura Funcional es binaria: o está asignada, o asciende.
+
+* **Regla de Asignación por Defecto:**
+
+  En ausencia de una asignación nominativa explícita (Nombre y Cargo) registrada formalmente en el Inventario de Activos Críticos, la responsabilidad legal, administrativa y operativa por los efectos del sistema se presume, de pleno derecho, en **el máximo nivel jerárquico que autorizó el inicio de la operación o el presupuesto de mantenimiento**.
+
+* **Implicancia Directa:**
+
+  La omisión en la designación de un "Owner" o "Custodio" no exime de responsabilidad a la organización; por el contrario, **concentra la responsabilidad en la Gerencia General o la Jefatura de Servicio**, eliminando cualquier posibilidad de alegar ignorancia sobre la gestión técnica del activo.
+
 ---
 
 ## 8. SUPERVISIÓN FIDUCIARIA
