@@ -5,7 +5,7 @@
 
 > *“The world hadn’t ever had so many moving parts or so few labels.”*
 >
-> — **William Gibson**
+> — **William Gibson (Mona Lisa Overdrive)**
 
 ---
 
