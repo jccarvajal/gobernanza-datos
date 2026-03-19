@@ -1,6 +1,6 @@
 # Guía de Contribución
 
-Este libro no es un texto estático; es un **Manual de Combate Vivo**. La tecnología de IA evoluciona semanalmente y la interpretación de la Ley 21.719 cambiará con cada dictamen de la Agencia. Este repositorio aspira a mantenerse como la referencia técnica de defensa para la ingeniería de datos en 2026.
+Este libro no es un texto estático; es un **documento vivo**. La tecnología de IA evoluciona semanalmente y la interpretación de la Ley 21.719 cambiará con cada dictamen de la Agencia. Este repositorio aspira a mantenerse como la referencia técnica de defensa para la ingeniería de datos en 2026.
 
 Si eres un CDO, DPO, Ingeniero de Datos, Abogado Digital o CISO, tu experiencia en la trinchera es vital para mantener este marco actualizado frente a nuevas amenazas regulatorias y cognitivas.
 
