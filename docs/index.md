@@ -6,6 +6,19 @@
 
 <img src="assets/images/portada-datos.png" alt="Portada del Libro - La Arquitectura de la Verdad" width="500">
 
+--
+
+## 🎧 Versión Audio (Resumen / Podcast)
+
+Antes de leer, puedes comenzar por el audio:
+
+⏱️ **Duración:** 20 minutos  
+
+<audio controls>
+  <source src="assets/audio/gobernanza-datos.m4a" type="audio/mp4">
+  Tu navegador no soporta audio.
+</audio>
+
 ---
 
 ## Descripción del Proyecto
