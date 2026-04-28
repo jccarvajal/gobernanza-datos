@@ -6,7 +6,7 @@
 
 <img src="assets/images/portada-datos.png" alt="Portada del Libro - La Arquitectura de la Verdad" width="500">
 
---
+---
 
 ## 🎧 Versión Audio (Resumen / Podcast)
 
