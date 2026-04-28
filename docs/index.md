@@ -12,7 +12,7 @@
 
 Antes de leer, puedes comenzar por el audio:
 
-⏱️ **Duración:** 20 minutos  
+⏱️ **Duración:** 27 minutos  
 
 <audio controls>
   <source src="assets/audio/gobernanza-datos.m4a" type="audio/mp4">
